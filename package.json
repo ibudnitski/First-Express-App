@@ -1,10 +1,24 @@
 {
-  "name": "${PROJECT_NAME}",
+  "name": "First-Express-App",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tsc -w",
+    "dev": "nodemon --inspect dist/index.js"
   },
-  "private": true
+  "private": true,
+  "author": "ibudnitski <igor.budnitski@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.5",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
 }
